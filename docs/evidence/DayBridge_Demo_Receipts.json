@@ -1,0 +1,342 @@
+{
+  "label": "DayBridge synthetic local execution only",
+  "exportedAt": "2026-10-03T19:14:38.174Z",
+  "state": {
+    "version": 1,
+    "calendarRevision": 3,
+    "nextPlan": 3,
+    "nextReceipt": 8,
+    "constraints": {
+      "pickup": 900,
+      "travel": 30,
+      "lunch": true
+    },
+    "calendar": [
+      {
+        "id": "standup",
+        "title": "Team stand-up",
+        "start": 540,
+        "end": 570,
+        "fixed": true
+      },
+      {
+        "id": "lunch",
+        "title": "Lunch break",
+        "start": 720,
+        "end": 765,
+        "fixed": true
+      },
+      {
+        "id": "review",
+        "title": "Project review",
+        "start": 780,
+        "end": 825,
+        "fixed": false
+      },
+      {
+        "id": "pickup",
+        "title": "School pickup",
+        "start": 900,
+        "end": 915,
+        "fixed": true
+      },
+      {
+        "id": "travel",
+        "title": "Travel to pickup",
+        "start": 870,
+        "end": 900,
+        "fixed": true
+      },
+      {
+        "id": "report-focus",
+        "title": "Report focus block",
+        "start": 915,
+        "end": 975,
+        "fixed": false
+      }
+    ],
+    "tasks": [
+      {
+        "id": "report",
+        "title": "Finish project report",
+        "duration": 60,
+        "deadline": 1020,
+        "status": "todo"
+      }
+    ],
+    "inbox": [
+      {
+        "id": "school",
+        "source": "School bulletin (synthetic)",
+        "text": "Pickup is at 15:00. Allow 30 minutes to travel."
+      }
+    ],
+    "plan": {
+      "id": "plan-2",
+      "baseRevision": 0,
+      "actions": [
+        {
+          "key": "move-review",
+          "adapter": "calendar",
+          "label": "Move project review to 13:00",
+          "payload": {
+            "id": "review",
+            "start": 780,
+            "end": 825
+          },
+          "id": "plan-2:move-review",
+          "status": "completed"
+        },
+        {
+          "key": "travel",
+          "adapter": "calendar",
+          "label": "Protect travel 14:30–15:00",
+          "payload": {
+            "id": "travel",
+            "title": "Travel to pickup",
+            "start": 870,
+            "end": 900,
+            "fixed": true
+          },
+          "id": "plan-2:travel",
+          "status": "completed"
+        },
+        {
+          "key": "focus",
+          "adapter": "calendar",
+          "label": "Reserve report focus 15:15–16:15",
+          "payload": {
+            "id": "report-focus",
+            "title": "Report focus block",
+            "start": 915,
+            "end": 975,
+            "fixed": false
+          },
+          "id": "plan-2:focus",
+          "status": "completed"
+        },
+        {
+          "key": "handoff",
+          "adapter": "message",
+          "label": "Prepare a pickup handoff for Sam; sending needs separate approval",
+          "payload": {
+            "recipient": "Sam (synthetic)",
+            "text": "I will handle school pickup at 15:00. Travel time is protected and the report has a focus slot.",
+            "pickup": 900
+          },
+          "id": "plan-2:handoff",
+          "status": "awaiting-approval"
+        }
+      ],
+      "reasons": [
+        "The review overlaps the 30-minute trip to school."
+      ],
+      "issues": [],
+      "focus": {
+        "id": "report-focus",
+        "title": "Report focus block",
+        "start": 915,
+        "end": 975,
+        "fixed": false
+      },
+      "travel": {
+        "id": "travel",
+        "title": "Travel to pickup",
+        "start": 870,
+        "end": 900,
+        "fixed": true
+      },
+      "pickup": {
+        "id": "pickup",
+        "title": "School pickup",
+        "start": 900,
+        "end": 915,
+        "fixed": true
+      },
+      "status": "applied"
+    },
+    "jobs": [
+      {
+        "key": "move-review",
+        "adapter": "calendar",
+        "label": "Move project review to 13:00",
+        "payload": {
+          "id": "review",
+          "start": 780,
+          "end": 825
+        },
+        "id": "plan-2:move-review",
+        "status": "completed",
+        "approved": true,
+        "attempts": 1
+      },
+      {
+        "key": "travel",
+        "adapter": "calendar",
+        "label": "Protect travel 14:30–15:00",
+        "payload": {
+          "id": "travel",
+          "title": "Travel to pickup",
+          "start": 870,
+          "end": 900,
+          "fixed": true
+        },
+        "id": "plan-2:travel",
+        "status": "completed",
+        "approved": true,
+        "attempts": 1
+      },
+      {
+        "key": "focus",
+        "adapter": "calendar",
+        "label": "Reserve report focus 15:15–16:15",
+        "payload": {
+          "id": "report-focus",
+          "title": "Report focus block",
+          "start": 915,
+          "end": 975,
+          "fixed": false
+        },
+        "id": "plan-2:focus",
+        "status": "completed",
+        "approved": true,
+        "attempts": 1
+      },
+      {
+        "key": "handoff",
+        "adapter": "message",
+        "label": "Prepare a pickup handoff for Sam; sending needs separate approval",
+        "payload": {
+          "recipient": "Sam (synthetic)",
+          "text": "I will handle school pickup at 15:00. Travel time is protected and the report has a focus slot.",
+          "pickup": 900
+        },
+        "id": "plan-2:handoff",
+        "status": "completed",
+        "approved": true,
+        "attempts": 3
+      }
+    ],
+    "receipts": [
+      {
+        "id": "receipt-1",
+        "kind": "plan",
+        "action": "preview",
+        "detail": "plan-1: 5 proposed actions, 0 blocking conflicts",
+        "status": "preview",
+        "at": "2026-10-03T19:13:09.813Z",
+        "simulation": true
+      },
+      {
+        "id": "receipt-2",
+        "kind": "plan",
+        "action": "preview",
+        "detail": "plan-2: 4 proposed actions, 0 blocking conflicts",
+        "status": "preview",
+        "at": "2026-10-03T19:13:24.876Z",
+        "simulation": true
+      },
+      {
+        "id": "receipt-3",
+        "kind": "calendar",
+        "action": "plan-2:move-review",
+        "detail": "Move project review to 13:00",
+        "status": "completed",
+        "at": "2026-10-03T19:13:39.905Z",
+        "simulation": true
+      },
+      {
+        "id": "receipt-4",
+        "kind": "calendar",
+        "action": "plan-2:travel",
+        "detail": "Protect travel 14:30–15:00",
+        "status": "completed",
+        "at": "2026-10-03T19:13:39.905Z",
+        "simulation": true
+      },
+      {
+        "id": "receipt-5",
+        "kind": "calendar",
+        "action": "plan-2:focus",
+        "detail": "Reserve report focus 15:15–16:15",
+        "status": "completed",
+        "at": "2026-10-03T19:13:39.905Z",
+        "simulation": true
+      },
+      {
+        "id": "receipt-6",
+        "kind": "message",
+        "action": "plan-2:handoff",
+        "detail": "Synthetic transport outage: message was not delivered.",
+        "status": "failed",
+        "at": "2026-10-03T19:13:55.978Z",
+        "simulation": true
+      },
+      {
+        "id": "receipt-7",
+        "kind": "message",
+        "action": "plan-2:handoff",
+        "detail": "Sent to the local synthetic outbox; no external message.",
+        "status": "completed",
+        "at": "2026-10-03T19:14:11.075Z",
+        "simulation": true
+      }
+    ],
+    "outbox": [
+      {
+        "recipient": "Sam (synthetic)",
+        "text": "I will handle school pickup at 15:00. Travel time is protected and the report has a focus slot.",
+        "pickup": 900,
+        "jobId": "plan-2:handoff",
+        "status": "sent"
+      }
+    ],
+    "outage": false,
+    "messages": [
+      {
+        "role": "assistant",
+        "text": "Tomorrow has a pickup conflict. Ask me to rescue your day: I can reconcile the calendar, protect travel time and help finish your report."
+      },
+      {
+        "role": "user",
+        "text": "Plan tomorrow around school pickup and finish my report."
+      },
+      {
+        "role": "assistant",
+        "text": "I found a plan with 5 proposed actions. The review overlaps the 30-minute trip to school. The first draft uses your lunch slot. You can protect lunch before approving. Review the preview, revise it or apply it."
+      },
+      {
+        "role": "user",
+        "text": "Keep lunch free."
+      },
+      {
+        "role": "assistant",
+        "text": "Lunch is protected. I rebuilt the preview: report focus is 15:15–16:15. Nothing has been applied."
+      },
+      {
+        "role": "user",
+        "text": "Apply this plan"
+      },
+      {
+        "role": "assistant",
+        "text": "Your local calendar is updated. The message to Sam is ready for separate approval. Receipts show each action; your report is scheduled, not marked finished."
+      },
+      {
+        "role": "user",
+        "text": "Approve the message"
+      },
+      {
+        "role": "assistant",
+        "text": "The simulated delivery failed. Calendar changes remain completed. Retry will only run failed, already-approved actions."
+      },
+      {
+        "role": "user",
+        "text": "Retry failed actions"
+      },
+      {
+        "role": "assistant",
+        "text": "Retried only the failed actions. Check the receipts and local outbox for the actual result."
+      }
+    ]
+  }
+}

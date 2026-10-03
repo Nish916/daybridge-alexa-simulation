@@ -45,4 +45,6 @@ This project was newly created on 3 October 2026 UTC / 4 October IST with Codex 
 
 Production work would require real authenticated calendar/messaging adapters, robust timezone support, source revisions from providers, encrypted storage, provider idempotency, richer natural-language understanding and accessibility evaluation with users. This prototype deliberately keeps those limits explicit.
 
+Validation: 16 logic tests and 11 real-browser checks passed; see [browser results](docs/evidence/Browser_Check_Result.json), [recording results](docs/evidence/DayBridge_Recording_Result.json) and [local execution receipts](docs/evidence/DayBridge_Demo_Receipts.json).
+
 See [submission packet](docs/submission.md) and [demo storyboard](docs/demo-storyboard.md). MIT licensed; no brand logos or third-party media are included.

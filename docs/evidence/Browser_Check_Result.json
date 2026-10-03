@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "preview makes no writes",
+    "follow-up preserves context",
+    "calendar approval executes",
+    "separate message approval",
+    "adapter outage recorded",
+    "retry does not repeat calendar changes",
+    "state survives reload",
+    "JSON export contains real local receipts",
+    "390px mobile has no horizontal overflow",
+    "reset clears state",
+    "no browser runtime errors"
+  ],
+  "runtimeErrors": [],
+  "completedAt": "2026-10-03T19:09:58.425Z",
+  "scope": "local synthetic simulation only"
+}

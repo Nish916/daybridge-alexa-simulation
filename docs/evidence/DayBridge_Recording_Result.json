@@ -1,0 +1,43 @@
+{
+  "scope": "actual UI footage of local synthetic simulation",
+  "completedAt": "2026-10-03T19:14:53.340Z",
+  "durationSeconds": 111.644,
+  "outboxCount": 1,
+  "calendarRevision": 3,
+  "reportStatus": "todo",
+  "check": "outage, retry, no duplicate writes and persistence assertions passed",
+  "notes": [
+    {
+      "seconds": 0.037,
+      "text": "DayBridge: an Alexa+ experience simulation. Synthetic data; no live Alexa or LLM."
+    },
+    {
+      "seconds": 9.137,
+      "text": "One goal becomes a preview across calendar, tasks and a family handoff. The calendar is unchanged."
+    },
+    {
+      "seconds": 24.167,
+      "text": "A follow-up preserves context and protects lunch. The revised plan still needs approval."
+    },
+    {
+      "seconds": 39.194,
+      "text": "Calendar changes execute locally. The handoff message remains unsent and requires separate approval."
+    },
+    {
+      "seconds": 55.334,
+      "text": "An injected local-adapter outage prevents delivery. Completed calendar actions remain completed."
+    },
+    {
+      "seconds": 70.373,
+      "text": "Retry runs only the failed approved message. One local delivery; no duplicated calendar writes."
+    },
+    {
+      "seconds": 85.423,
+      "text": "Each receipt records an actual local outcome. These are simulation receipts, not external delivery proof."
+    },
+    {
+      "seconds": 97.642,
+      "text": "Context survives refresh. The report is scheduled, still unfinished. No real accounts or messages."
+    }
+  ]
+}

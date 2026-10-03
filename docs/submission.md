@@ -62,7 +62,8 @@ Clone the source, install Node.js 20+, run `npm test` and `npm start`, and open 
 - Official rules: https://amazonappdev2026.devpost.com/rules
 - Official FAQ: https://amazonappdev2026.devpost.com/details/faqs
 - Submission deadline: 23 October 2026 12:00 PDT / 24 October 2026 00:30 IST.
-- Source repository URL and exact tested commit: to be filled after publication.
+- Source repository: https://github.com/Nish916/daybridge-alexa-simulation
+- Tested implementation baseline: `8d9134beceeeacfa25d65e4fe8ee705d5eae55c8`; 16 logic tests and 11 real-browser checks passed. Recording checks passed over 111.6 seconds of actual UI footage.
 - Demo video must be public on YouTube/Vimeo and under three minutes. A local MP4 alone does not complete this requirement.
 - Owner must confirm individual eligibility and authorize the contractual rules before final entry. No legal/tax/KYC forms are signed by this work.
 

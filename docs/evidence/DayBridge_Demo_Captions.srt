@@ -1,0 +1,31 @@
+1
+00:00:00,037 --> 00:00:09,137
+DayBridge: an Alexa+ experience simulation. Synthetic data; no live Alexa or LLM.
+
+2
+00:00:09,137 --> 00:00:24,167
+One goal becomes a preview across calendar, tasks and a family handoff. The calendar is unchanged.
+
+3
+00:00:24,167 --> 00:00:39,194
+A follow-up preserves context and protects lunch. The revised plan still needs approval.
+
+4
+00:00:39,194 --> 00:00:55,334
+Calendar changes execute locally. The handoff message remains unsent and requires separate approval.
+
+5
+00:00:55,334 --> 00:01:10,373
+An injected local-adapter outage prevents delivery. Completed calendar actions remain completed.
+
+6
+00:01:10,373 --> 00:01:25,423
+Retry runs only the failed approved message. One local delivery; no duplicated calendar writes.
+
+7
+00:01:25,423 --> 00:01:37,642
+Each receipt records an actual local outcome. These are simulation receipts, not external delivery proof.
+
+8
+00:01:37,642 --> 00:01:51,644
+Context survives refresh. The report is scheduled, still unfinished. No real accounts or messages.
