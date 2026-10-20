@@ -84,3 +84,10 @@ This is a **simulation using synthetic data**; it is not a live Alexa+/Amazon SD
 - [ ] Entrant reviews and accepts required terms / eligibility representations.
 - [ ] Final **Submit** action completed and receipt/public confirmation verified.
 No prize, payout, final entry or judge acceptance is claimed until documented.
+
+## Optional evidence-backed friction log entries (contest form)
+**Friction 1 — framework auto-detection on Vercel.** Task: host a zero-dependency static browser simulation. Expected: the project marked READY should render the front-end. Observed: the first automatically detected Node deployment marked READY but returned HTTP 500 FUNCTION_INVOCATION_FAILED on the live home route (20 October 2026). Severity: high, demo unavailable. Workaround: configure Vercel for static output with `vercel.json` (`framework: null`, `outputDirectory: "."`), redeploy and independently verify GET / and JS/CSS paths return HTTP 200. Actionable suggestion: report a root-route HTTP smoke check as an essential post-deploy gate rather than equating READY with user-facing health.
+
+**Friction 2 — Playwright video encoder prerequisite.** Task: record a real automated end-to-end demo. Expected: Playwright's `recordVideo` records with the installed browser. Observed: `browserContext.newPage` failed because the separate Playwright FFmpeg binary was missing even though system FFmpeg and Chrome were installed (20 October 2026). Severity: medium, demo artifact blocked. Workaround: `npx playwright install ffmpeg`, rerun the real-browser recording; final 112-second MP4 verified. Actionable suggestion: include the recording encoder in the default install/preflight instructions, or display an explicit diagnostic before the browser session starts.
+
+These are authentic observed engineering issues, not a claim of Amazon SDK access, a contest organizer defect, or a completed Devpost form.
