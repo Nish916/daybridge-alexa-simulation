@@ -1,5 +1,8 @@
 # DayBridge
 
+**MIT-licensed source:** [LICENSE](LICENSE)  |  **Live simulation:** https://daybridge-alexa-simulation.vercel.app  |  **[Functional demo MP4 + evidence](https://github.com/Nish916/daybridge-alexa-simulation/releases/tag/daybridge-hackathon-2026)**  |  **[Devpost entry packet](docs/final-submission-packet.md)**
+
+
 A calmer tomorrow, from one conversation.
 
 DayBridge is an **Alexa+ experience simulation** for Amazon's Build, Ship, Shape 2026 hackathon. It reconciles a synthetic household calendar, a report deadline and a pickup handoff. The workflow maintains context across turns, previews changes, requires calendar approval, asks separately before message delivery, and retries failures without repeating completed work.
