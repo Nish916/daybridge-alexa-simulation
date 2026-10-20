@@ -1,6 +1,6 @@
 # Ready submission text — DayBridge
 
-Status: preparation only. No Devpost registration, contest submission, eligibility attestation or award is claimed.
+Status as checked 20 October 2026: registered for the hackathon and DayBridge draft #1214043 exists; the final Devpost submission is **not confirmed**. No eligibility attestation, award or payout is claimed.
 
 ## Title / tagline
 
@@ -8,7 +8,7 @@ DayBridge — A calmer tomorrow, from one conversation.
 
 ## Primary track
 
-Alexa+ alternate simulation route. No mini challenge selected: this build uses no AWS runtime and no separate additional open-source contribution is claimed.
+Alexa+ alternate simulation route. No AWS Builder mini-challenge is claimed: this build has no AWS runtime. A separate eligible-looking open-source test contribution for the optional **Open Source mini-challenge** is documented in [the final submission packet](final-submission-packet.md); selecting it on Devpost and its eligibility remain unconfirmed.
 
 ## Inspiration
 
@@ -63,8 +63,11 @@ Clone the source, install Node.js 20+, run `npm test` and `npm start`, and open 
 - Official FAQ: https://amazonappdev2026.devpost.com/details/faqs
 - Submission deadline: 23 October 2026 12:00 PDT / 24 October 2026 00:30 IST.
 - Source repository: https://github.com/Nish916/daybridge-alexa-simulation
-- Tested implementation baseline: `8d9134beceeeacfa25d65e4fe8ee705d5eae55c8`; 16 logic tests and 11 real-browser checks passed. Recording checks passed over 111.6 seconds of actual UI footage.
-- Demo video must be public on YouTube/Vimeo and under three minutes. A local MP4 alone does not complete this requirement.
+- Independently verified public site: https://daybridge-alexa-simulation.vercel.app
+- Public 112-second actual browser recording: https://github.com/Nish916/daybridge-alexa-simulation/releases/download/daybridge-hackathon-2026/DayBridge_Amazon_Hackathon_Final_Demo_2026.mp4
+- Exact form-ready entry copy and optional open-source contribution: [Final submission packet](final-submission-packet.md)
+- 20 October 2026 verification: 16/16 logic tests and 11/11 real-browser checks passed against the public deployment; no browser runtime errors. The final 112-second real-browser recording also passed its workflow assertions. Host config commit: `2e147191b9fb194f87e7c6e2b2bb89dcb3961662`.
+- Actual recorded demo is public and under three minutes on GitHub, but **still needs a publicly visible YouTube or Vimeo upload** to meet the contest requirement. A GitHub MP4 alone is not a valid official video link.
 - Owner must confirm individual eligibility and authorize the contractual rules before final entry. No legal/tax/KYC forms are signed by this work.
 
 Any advertised prize remains competitive and unapproved. No earnings or settlement is recorded from this preparation.
